@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <title>Home Page</title>
+  <!-- Link to external JavaScript file -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header section with navigation bar -->
+  <header>
+    <h1>Beauty Product Discovery</h1>
+    <!-- Navigation bar that links to all pages -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content section with promo banner -->
+  <main>
+    <section id="promoBanner">
+      <h2>Discover Your Perfect Beauty Products</h2>
+      <p>Explore our range of products and find what suits you best!</p>
+    </section>
+    <p>Welcome to our beauty product discovery platform. We provide the best recommendations to help you find products tailored to your needs.</p>
+    <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJlYXV0eSUyMHByb2R1Y3RzfGVufDB8fDB8fHww" alt="Beauty Products" style="width:65%;">
+
+    <section id="subscribe">
+      <h3>Subscribe to our email list for more updates and to stay connected:</h3>
+      <form onsubmit="handleSubscribe(event)">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div id="message"></div>
+    </section>
+  </main>
+
+  <!-- Footer section with copyright and validation links -->
+  <footer>
+    <p>&copy; 2024 Beauty Product Discovery</p>
+    <a href="https://example.com/privacy-policy" target="_blank">Privacy Policy</a> | 
+    <a href="https://example.com/terms-of-service" target="_blank">Terms of Service</a> | 
+    <a href="https://example.com/contact" target="_blank">Contact Us</a> | 
+    <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> | 
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+  </footer>
+
+</body>
+</html>

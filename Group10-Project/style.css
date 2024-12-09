@@ -1,0 +1,271 @@
+/* General styling for the entire website */
+body {
+  font-family: Arial, sans-serif; /* Sets the font for the entire page */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  background-color: #f4f4f4; /* Sets a light background color */
+}
+
+/* Header and footer styling */
+header, footer {
+  background-color: #ff69b4; /* Sets a pink background for header/footer */
+  color: white; /* Sets text color to white */
+  text-align: center; /* Centers text */
+  padding: 10px 0; /* Adds padding to top and bottom */
+}
+
+/* Navigation bar styling */
+nav ul {
+  list-style-type: none; /* Removes bullet points from list */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  background-color: #444; /* Sets background color for the navbar */
+}
+
+nav ul li {
+  float: left; /* Floats each list item to the left */
+}
+
+nav ul li a {
+  display: block; /* Makes anchor tags block level */
+  color: white; /* Sets text color to white */
+  text-align: center; /* Centers text inside the links */
+  padding: 14px 20px; /* Adds padding inside the links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+nav ul li a:hover {
+  background-color: #575757; /* Changes background on hover */
+}
+
+/* Ensuring navigation bar is cleared after floats */
+nav::after {
+  content: "";
+  display: table;
+  clear: both; /* Clears float for proper layout */
+}
+
+/* Main content section styling */
+main {
+  padding: 20px; /* Adds padding to the main content */
+}
+
+/* Footer styling */
+footer {
+  font-size: 14px; /* Sets smaller font size for the footer */
+}
+
+/* Promo banner styling for the home page */
+#promoBanner {
+  background-color: #99ccff; /* Sets light blue background */
+  color: white; /* Sets text color to white */
+  padding: 20px; /* Adds padding to the banner */
+  text-align: center; /* Centers the banner text */
+  border: 1px solid #0066cc; /* Adds border around the banner */
+  margin-bottom: 10px; /* Adds space below the banner */
+}
+
+/* Subscription box styling */
+#subscribe {
+  margin: 20px 0; /* Adds space above and below the subscription box */
+  padding: 10px; /* Adds padding inside the box */
+  background-color: #f9f9f9; /* Sets light gray background */
+  border: 1px solid #ddd; /* Adds border around the box */
+  border-radius: 5px; /* Rounds the corners of the box */
+}
+
+#subscribe h3 {
+  margin-bottom: 10px; /* Adds space below the header */
+}
+
+#subscribe input[type="email"] {
+  padding: 10px; /* Adds padding inside the input field */
+  margin-right: 10px; /* Adds space between input field and button */
+  border: 1px solid #ccc; /* Adds border to input field */
+  border-radius: 5px; /* Rounds the corners of the input field */
+}
+
+#subscribe button {
+  padding: 10px 15px; /* Adds padding to the button */
+  background-color: #007bff; /* Sets blue background for the button */
+  color: white; /* Sets text color to white */
+  border: none; /* Removes border from the button */
+  border-radius: 5px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+#subscribe button:hover {
+  background-color: #0056b3; /* Changes button color on hover */
+}
+
+/* CARD STYLES */
+/* Card container to hold multiple cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap in multiple rows */
+  gap: 20px; /* Adds space between the cards */
+  justify-content: center; /* Centers the cards */
+  padding: 20px; /* Adds padding around the container */
+}
+
+/* Individual card styling */
+.card {
+  width: 300px; /* Sets fixed width for cards */
+  background: #fff; /* Sets white background for cards */
+  border: 1px solid #e0e0e0; /* Adds light border to cards */
+  border-radius: 10px; /* Rounds the corners of the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+  overflow: hidden; /* Hides overflow content */
+  text-align: center; /* Centers text inside the card */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Moves card up on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Increases shadow effect on hover */
+}
+
+.card-image {
+  width: 100%; /* Makes the image take full width of the card */
+  height: 200px; /* Sets fixed height for images */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.card-title {
+  font-size: 1.2em; /* Sets title font size */
+  margin: 15px 0; /* Adds margin around the title */
+  color: #333; /* Sets a dark color for the title */
+}
+
+.card-description {
+  font-size: 0.9em; /* Sets smaller font size for the description */
+  color: #666; /* Sets a medium gray color for the description */
+  margin: 0 15px 20px; /* Adds space around the description */
+}
+
+/* Styling for trends section */
+.trend {
+  border: 1px solid #ddd; /* Adds border around trend items */
+  padding: 10px; /* Adds padding inside the trend items */
+  margin-bottom: 10px; /* Adds space below each trend item */
+  text-align: center; /* Centers the content inside trend items */
+}
+
+.trend img {
+  max-width: 100%; /* Ensures the image fits within its container */
+  height: auto; /* Adjusts the height of the image automatically */
+}
+
+/* Filters styling for product categories */
+.filters {
+  margin: 20px 0; /* Adds space above and below the filter section */
+}
+
+.filter-button {
+  padding: 10px 20px; /* Adds padding inside filter buttons */
+  margin: 0 10px; /* Adds space between filter buttons */
+  border: 1px solid #007BFF; /* Adds border around buttons */
+  background-color: #f4f4f4; /* Sets light background color */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.filter-button:hover {
+  background-color: #007BFF; /* Changes background color on hover */
+  color: white; /* Changes text color to white on hover */
+}
+
+/* Card styles - Redundant section */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap in multiple rows */
+  justify-content: center; /* Centers the cards */
+}
+
+.card {
+  width: 25%; /* Sets width of cards to 25% */
+  margin: 10px; /* Adds margin around each card */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves card up on hover */
+}
+
+.card-image {
+  width: 100%; /* Makes the image take full width of the card */
+}
+
+.card-title {
+  font-size: 1.2em; /* Sets the font size for the title */
+}
+
+.card-description {
+  font-size: 0.9em; /* Sets font size for the description */
+  color: #666; /* Sets the color of the description text */
+}
+
+#reviewsContainer {
+  margin-top: 20px;
+}
+
+#reviewsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#reviewsList li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Styling for the review submission form */
+#reviewForm {
+  margin-top: 20px;
+}
+
+#reviewForm input, #reviewForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#reviewForm button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reviewForm button:hover {
+  background-color: #45a049;
+}
+
+/* Style for the date confirmation message */
+#dateConfirmation {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+#reviewsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#reviewsList li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+
