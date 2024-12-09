@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js" defer></script>
+
+  <title>About Us</title>
+</head>
+<body>
+
+  <!-- Header section with navigation bar -->
+  <header>
+    <h1>About Beauty Product Discovery</h1>
+    <!-- Consistent navigation bar across all pages -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <h2>Who We Are</h2>
+    <p>We are a platform dedicated to helping users discover the best beauty products based on their needs.</p>
+    <p>Our mission is to simplify the process of finding beauty products, guiding users through a curated selection of high-quality products that suit their individual preferences and needs.</p>
+
+    <h2>Meet the Founder</h2>
+    <p>My name is Mary Wilson, and I am the founder of Beauty Product Discovery. I've always had a passion for beauty and wanted to share my thoughts and opinions with everyone else. I hope you find something useful on my page.</p>
+    
+    <!-- Image section -->
+    <figure>
+      <img src="file:///Users/mary.araina/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos/ExternalEditSessions/4C1C585D-99BB-4160-99A3-BEEE0D75D1EB/IMG_6163.jpeg" style="width:200px; height:auto;">
+      <figcaption>- Founder of Beauty Product Discovery</figcaption>
+    </figure>
+
+    <!-- New section for displaying team members fetched via AJAX -->
+    <h2>Our Team</h2>
+    <p>Meet the members of our team:</p>
+    <div id="teamInfo">
+      <!-- Team members will be populated here via AJAX -->
+    </div>
+    <button id="loadTeamButton">Load Team Members</button>
+    <div id="loadingMessage" style="display:none;">Loading team members...</div>
+
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2024 Beauty Product Discovery</p>
+    <a href="https://example.com/privacy-policy" target="_blank">Privacy Policy</a> | 
+    <a href="https://example.com/terms-of-service" target="_blank">Terms of Service</a> | 
+    <a href="https://example.com/contact" target="_blank">Contact Us</a> | 
+    <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> | 
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+  </footer>
+
+  <!-- Adding jQuery to simplify AJAX request -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</body>
+</html>

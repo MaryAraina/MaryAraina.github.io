@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us</title>
+  
+  <!-- Link to external JavaScript and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+  <script src="script.js" defer></script>
+
+  <style>
+    #reviewsContainer {
+      margin-top: 20px;
+    }
+
+    #reviewsList {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #reviewsList li {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+
+    /* Styling for the review submission form */
+    #reviewForm {
+      margin-top: 20px;
+    }
+
+    #reviewForm input, #reviewForm textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    #reviewForm button {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #reviewForm button:hover {
+      background-color: #45a049;
+    }
+
+    /* Style for the date confirmation message */
+    #dateConfirmation {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section with navigation bar -->
+  <header>
+    <h1>Contact Beauty Product Discovery</h1>
+    <!-- Consistent navigation bar across all pages -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <h2>Get in Touch</h2>
+    <p>Feel free to reach out to us via the following methods:</p>
+    <ul>
+      <li>Email: contact@beautyproducts.com</li>
+      <li>Phone: (240) 484-3011</li>
+      <li>Our customer support team is available to assist you 24/7.</li>
+    </ul>
+
+    <!-- jQuery Plugin: Button to show customer reviews -->
+    <button id="showReviews">Load Customer Reviews</button>
+    
+    <!-- Container for customer reviews (hidden initially) -->
+    <div id="reviewsContainer" style="display: none;">
+      <ul id="reviewsList">
+        <!-- Reviews will be loaded dynamically here -->
+      </ul>
+    </div>
+
+    <!-- jQuery-UI Widget: Interactive datepicker for scheduling -->
+    <h3>Schedule a Call</h3>
+    <p>Select a convenient date for a callback:</p>
+    <input type="text" id="scheduleDate">
+
+    <!-- Date confirmation message -->
+    <div id="dateConfirmation" style="display: none;">
+      We will be in touch on <span id="selectedDate"></span>.
+    </div>
+
+    <!-- Review submission form -->
+    <h3>Leave a Review</h3>
+    <form id="reviewForm">
+      <input type="text" id="reviewName" placeholder="Your Name" required>
+      <textarea id="reviewText" rows="4" placeholder="Your Review" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2024 Beauty Product Discovery</p>
+    <a href="https://example.com/privacy-policy" target="_blank">Privacy Policy</a> | 
+    <a href="https://example.com/terms-of-service" target="_blank">Terms of Service</a> | 
+    <a href="https://example.com/contact" target="_blank">Contact Us</a> | 
+    <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> | 
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+  </footer>
+</body>
+</html>

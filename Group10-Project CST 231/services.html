@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- External JS libraries for functionality -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  
+  <!-- Link to external JavaScript file for custom scripts -->
+  <script src="script.js" defer></script>
+  
+  <title>Our Services</title>
+</head>
+<body>
+
+  <!-- Header section with site title and navigation bar -->
+  <header>
+    <h1>Our Services</h1>
+    <nav>
+      <ul>
+        <!-- Navigation links to other pages -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content section for services -->
+  <main>
+    <h2>What We Offer</h2>
+    <!-- Brief description of the services offered -->
+    <p>We offer personalized beauty product recommendations, product reviews, and beauty tips that are frequently updated every week!</p>
+    <p>A few of our services include:</p>
+    <!-- List of services with external links -->
+    <ul>
+      <li><a href="https://www.makeup.com/product-and-reviews/all-products-and-reviews/skin-hair-makeup-quiz" target="_blank">Personalized product recommendations</a></li>
+      <li><a href="https://www.youtube.com/watch?v=Er48H_QJVhk" target="_blank">Expert reviews and ratings</a></li>
+      <li><a href="https://www.today.com/shop/best-skincare-products-beauty-awards-t280949" target="_blank">Beauty and skincare tips</a></li>
+      <li><a href="https://www.byrdie.com/makeup-deal-sites-5070807" target="_blank">Exclusive deals on selected products</a></li>
+    </ul>
+
+    <!-- Filter buttons for Isotope (used for sorting the items) -->
+    <div class="filters">
+      <button class="filter-button" data-filter="*">All</button>
+      <button class="filter-button" data-filter=".quiz">Quiz</button>
+      <button class="filter-button" data-filter=".makeup">Makeup</button>
+      <button class="filter-button" data-filter=".skincare">Skincare</button>
+      <button class="filter-button" data-filter=".eyes">Eyes</button>
+    </div>
+
+    <!-- Container for displaying service cards -->
+    <div class="card-container">
+      <!-- Each card represents a service, categorized using Isotope filter data -->
+      <div class="card quiz" data-category="quiz">
+        <img class="card-image" src="https://images.ctfassets.net/u4vv676b8z52/3OYeHyRL4qz1LzLjxW0bWC/2cdea093cb11c18f0960cee4fb2361e4/eye-makeup-678x446.gif?fm=jpg&q=80" alt="Beauty Quiz">
+        <h3 class="card-title">Take the Beauty Quiz!</h3>
+        <p class="card-description">Discover your perfect beauty routine by answering a few simple questions.</p>
+      </div>
+      <div class="card makeup" data-category="makeup">
+        <img class="card-image" src="https://people.com/thmb/gnMOXR0PmN4ppk-34DFTW5H6VoI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(2549x0:2551x2)/peo-beauty-awards-2024-makeup-836a92aee0db435d951a02b92b8f350d.jpg" alt="Award-Winning Makeup">
+        <h3 class="card-title">Award-Winning Makeup</h3>
+        <p class="card-description">Explore the best face makeup products of 2024 as chosen by beauty experts.</p>
+      </div>
+      <div class="card skincare" data-category="skincare">
+        <img class="card-image" src="https://upcirclebeauty.com/cdn/shop/articles/rsz_no_makeup_skincare_routine_2929x.jpg?v=1650531833" alt="Skincare Essentials">
+        <h3 class="card-title">Skincare Essentials</h3>
+        <p class="card-description">Learn about top skincare products to keep your skin glowing and healthy.</p>
+      </div>
+    </div>
+
+    <!-- Button to load popular beauty trends -->
+    <button id="loadTrends">Load Popular Beauty Trends</button>
+    <!-- Container to display trends after loading -->
+    <div id="trendsContainer"></div>
+  </main>
+
+  <!-- Footer section with legal links and validation options -->
+  <footer>
+    <p>&copy; 2024 Beauty Product Discovery</p>
+    <a href="https://example.com/privacy-policy" target="_blank">Privacy Policy</a> | 
+    <a href="https://example.com/terms-of-service" target="_blank">Terms of Service</a> | 
+    <a href="https://example.com/contact" target="_blank">Contact Us</a> | 
+    <!-- W3C validation links for HTML and CSS -->
+    <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> | 
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+  </footer>
+
+</body>
+</html>
